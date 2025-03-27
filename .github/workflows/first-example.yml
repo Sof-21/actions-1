@@ -6,6 +6,9 @@ jobs:
     first_job:
         runs-on: ubuntu-latest
         steps:
+        - name: Git clone
+          uses: actions/checkout@main
+
         - name: Welcome message
           run: echo 'Welcome Sof'
 
